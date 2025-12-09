@@ -913,3 +913,46 @@ body {
     transform: none !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Kontakt-Button in der Navigation */
+
+.btn-nav-contact {
+  padding: 0.35rem 1.7rem;
+  border-radius: 999px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* etwas kleinere, feinere Icon-Variante im Header */
+.btn-icon-nav {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-width: 1.2px;
+}
+
+.btn-icon-nav svg {
+  width: 12px;
+  height: 12px;
+  stroke-width: 1.4;
+}
+
+/* Label sauber ausrichten, kein Zeilenumbruch */
+.btn-nav-label {
+  display: inline-block;
+  white-space: nowrap;
+}
