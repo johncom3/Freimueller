@@ -15,11 +15,10 @@
   <meta name="description" content="Freimüller Facility Service – zuverlässige, professionelle und sympathische Facility-Dienstleistungen.">
 </head>
 <body>
-  <!-- Weißer Seitenhintergrund, beige Mitte -->
   <div class="page">
     <!-- Header / Navigation -->
     <header class="header">
-      <div class="container header-inner">
+      <div class="container header-inner" data-animate>
         <a href="#top" class="logo-wrap">
           <img src="assets/images/logo_with_text.png" alt="Freimüller Facility Service Logo" class="logo-with-text">
         </a>
@@ -28,7 +27,15 @@
           <a href="#leistungen">Leistungen</a>
           <a href="#ueber-uns">Über uns</a>
           <a href="#vorteile">Ihre Vorteile</a>
-          <a href="#kontakt" class="btn btn-outline">Kontakt</a>
+          <a href="#kontakt" class="btn btn-outline btn-nav-contact">
+            <span class="btn-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="6" width="16" height="12" rx="2"></rect>
+                <polyline points="4,8 12,13 20,8"></polyline>
+              </svg>
+            </span>
+            Kontakt
+          </a>
         </nav>
 
         <button class="nav-toggle" aria-label="Menü öffnen">
@@ -38,39 +45,85 @@
     </header>
 
     <main id="top">
-      <!-- Hero (ohne Card, direkt auf beige Band) -->
+      <!-- Hero -->
       <section class="hero">
-        <div class="container hero-inner">
+        <div class="container hero-inner" data-animate>
           <div class="hero-text">
             <p class="eyebrow">Willkommen bei</p>
-            <h1>Freimüller GMBH Facility Service</h1>
+            <h1>
+              Freimüller GMBH<br>
+              <span class="hero-highlight-text">Facility Service</span>
+            </h1>
             <p class="hero-sub">
               Saubere Gebäude, gepflegte Anlagen und ein verlässlicher Partner an Ihrer Seite –
               professionell, sympathisch und persönlich.
             </p>
+
             <div class="hero-actions">
-              <a href="#kontakt" class="btn btn-primary">Anfrage stellen</a>
-              <a href="#leistungen" class="btn btn-ghost">Leistungen ansehen</a>
+              <a href="#kontakt" class="btn btn-primary">
+                <span class="btn-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <polyline points="10,8 14,12 10,16"></polyline>
+                  </svg>
+                </span>
+                Anfrage stellen
+              </a>
+
+              <a href="tel:+41780000000" class="btn btn-ghost">
+                <span class="btn-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 4h3l2 4-3 2c1.2 2.1 3 3.9 5.1 5.1l2-3 4 2v3.5a2 2 0 0 1-2 2C11 19 5 13 4 6a2 2 0 0 1 2-2z"></path>
+                  </svg>
+                </span>
+                Direkt anrufen
+              </a>
             </div>
 
             <div class="hero-highlights">
-              <div>
-                <strong>24/7 erreichbar</strong>
-                <span>für unsere Stammkunden</span>
+              <div class="highlight-card" data-animate>
+                <span class="icon-badge">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 4h16v4H4zM5 9h14v11H5zM9 9V4"></path>
+                  </svg>
+                </span>
+                <div class="highlight-text">
+                  <strong>24/7 erreichbar</strong>
+                  <span>für unsere Stammkunden</span>
+                </div>
               </div>
-              <div>
-                <strong>Individuelle Konzepte</strong>
-                <span>für Gewerbe & Privat</span>
+
+              <div class="highlight-card" data-animate>
+                <span class="icon-badge">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 7l8-4 8 4v4c0 5-3.5 9-8 9S4 16 4 11V7z"></path>
+                    <path d="M9 11l2 2 4-4"></path>
+                  </svg>
+                </span>
+                <div class="highlight-text">
+                  <strong>Individuelle Konzepte</strong>
+                  <span>für Gewerbe &amp; Privat</span>
+                </div>
               </div>
-              <div>
-                <strong>Qualität & Vertrauen</strong>
-                <span>mit festen Ansprechpartnern</span>
+
+              <div class="highlight-card" data-animate>
+                <span class="icon-badge">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 5h14v14H5z"></path>
+                    <path d="M9 9h6v6H9z"></path>
+                  </svg>
+                </span>
+                <div class="highlight-text">
+                  <strong>Qualität &amp; Vertrauen</strong>
+                  <span>mit einem festen Ansprech&shy;partner</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="hero-visual">
+          <div class="hero-visual" data-animate>
             <div class="hero-logo-card">
+              <div class="hero-pulse"></div>
               <img src="assets/images/logo.png" alt="Freimüller Haus-Icon" class="logo-icon">
               <p>Ihr Partner für gepflegte Immobilien und zuverlässigen Facility Service.</p>
             </div>
@@ -81,50 +134,87 @@
       <!-- Leistungen -->
       <section id="leistungen" class="section">
         <div class="container">
-          <div class="section-box">
-            <h2>Unsere Leistungen</h2>
+          <div class="section-box" data-animate>
+            <h2 class="section-title-with-icon">
+              <span class="icon-badge icon-badge-inline">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 10l8-6 8 6v8H4z"></path>
+                  <path d="M10 18v-4h4v4"></path>
+                </svg>
+              </span>
+              Unsere Leistungen
+            </h2>
             <p class="section-intro">
               Wir bieten Ihnen ein ganzheitliches Facility Management – transparent, flexibel
               und exakt auf Ihre Immobilie zugeschnitten.
             </p>
 
             <div class="grid cards-3">
-              <article class="card">
-                <h3>Gebäudereinigung</h3>
-                <p>
-                  Unterhaltsreinigung, Glas- und Fassadenreinigung, Grundreinigung und mehr –
-                  für nachhaltig saubere und gepflegte Objekte.
-                </p>
-                <ul>
-                  <li>Büros & Verwaltungen</li>
-                  <li>Treppenhäuser & Eingangsbereiche</li>
-                  <li>Praxis- & Gewerbeflächen</li>
+              <article class="card" data-animate>
+                <div class="card-top">
+                  <div class="card-icon">
+                    <span class="icon-badge">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 4h14v14H5z"></path>
+                        <path d="M7 7h5v2H7zM7 11h10v2H7zM7 15h8v2H7z"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <h3>Gebäudereinigung</h3>
+                  <p>
+                    Unterhalts-, Glas- und Grundreinigung für dauerhaft saubere und gepflegte Objekte.
+                  </p>
+                </div>
+                <ul class="card-list">
+                  <li>Büros &amp; Verwaltungen</li>
+                  <li>Treppenhäuser &amp; Eingangsbereiche</li>
+                  <li>Praxis- &amp; Gewerbeflächen</li>
                 </ul>
               </article>
 
-              <article class="card">
-                <h3>Hauswartung & Facility Service</h3>
-                <p>
-                  Technische Kontrollen, Kleinreparaturen und die Koordination von Dienstleistern –
-                  damit Ihre Immobilie reibungslos funktioniert.
-                </p>
-                <ul>
-                  <li>Regelmäßige Objektkontrollen</li>
+              <article class="card" data-animate>
+                <div class="card-top">
+                  <div class="card-icon">
+                    <span class="icon-badge">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 5h14v10H5z"></path>
+                        <path d="M9 15v4h6v-4"></path>
+                        <path d="M8 9h2v2H8zM11 9h2v2h-2zM14 9h2v2h-2z"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <h3>Hauswartung &amp; Technik</h3>
+                  <p>
+                    Regelmäßige Kontrollen, Kleinreparaturen und Koordination externer Dienstleister.
+                  </p>
+                </div>
+                <ul class="card-list">
+                  <li>Technische Objektkontrollen</li>
                   <li>Koordination von Handwerksbetrieben</li>
-                  <li>Dokumentation & Reporting</li>
+                  <li>Dokumentation &amp; Reporting</li>
                 </ul>
               </article>
 
-              <article class="card">
-                <h3>Aussenanlagen & Umgebung</h3>
-                <p>
-                  Ein gepflegter Außenbereich ist Ihre Visitenkarte – wir kümmern uns darum
-                  zu jeder Jahreszeit.
-                </p>
-                <ul>
-                  <li>Grünflächenpflege</li>
-                  <li>Winterdienst & Räumarbeiten</li>
-                  <li>Reinigung von Wegen & Parkplätzen</li>
+              <article class="card" data-animate>
+                <div class="card-top">
+                  <div class="card-icon">
+                    <span class="icon-badge">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 18h18"></path>
+                        <path d="M5 18c0-4 2-7 7-7s7 3 7 7"></path>
+                        <path d="M8 11l2-3 2 2 3-4 3 5"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <h3>Aussenanlagen &amp; Umgebung</h3>
+                  <p>
+                    Saubere Wege, gepflegte Grünflächen und zuverlässiger Winterdienst.
+                  </p>
+                </div>
+                <ul class="card-list">
+                  <li>Grünpflege &amp; Hecken­schnitt</li>
+                  <li>Reinigung von Wegen &amp; Plätzen</li>
+                  <li>Winterdienst &amp; Räumarbeiten</li>
                 </ul>
               </article>
             </div>
@@ -135,18 +225,26 @@
       <!-- Über uns -->
       <section id="ueber-uns" class="section">
         <div class="container">
-          <div class="section-box section-box-soft">
+          <div class="section-box section-box-soft" data-animate>
             <div class="about-grid">
               <div>
-                <h2>Über Freimüller GMBH</h2>
+                <h2 class="section-title-with-icon">
+                  <span class="icon-badge icon-badge-inline">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 20v-8l8-6 8 6v8z"></path>
+                      <path d="M10 20v-6h4v6"></path>
+                    </svg>
+                  </span>
+                  Über Freimüller GMBH
+                </h2>
                 <p>
                   Freimüller Facility Service steht für persönliche Betreuung, klare Kommunikation
-                  und kompromisslose Qualität. Als inhabergeführtes Unternehmen sind wir nah
-                  an unseren Kunden und legen Wert auf langfristige Partnerschaften.
+                  und hohe Detailtreue. Als inhabergeführtes Unternehmen sind wir nah an unseren
+                  Kunden und legen Wert auf langfristige Zusammenarbeit.
                 </p>
                 <p>
-                  Wir arbeiten mit strukturierten Prozessen, geschultem Personal und modernen
-                  Reinigungs- und Arbeitsmitteln – effizient, nachhaltig und zuverlässig.
+                  Strukturierte Abläufe, geschultes Personal und moderne Arbeitsmittel sorgen dafür,
+                  dass Ihre Immobilie sichtbar gewinnt – Tag für Tag.
                 </p>
                 <div class="pill-row">
                   <span class="pill">Inhabergeführt</span>
@@ -154,18 +252,24 @@
                   <span class="pill">Transparente Abläufe</span>
                 </div>
               </div>
+
               <div class="about-facts">
-                <div class="fact">
-                  <strong>100&nbsp;%</strong>
-                  <span>Zufriedenheits­fokus</span>
+                <div class="fact" data-animate>
+                  <span class="fact-label">Betreuung</span>
+                  <strong>Ein fester Kontakt</strong>
+                  <span>vom ersten Gespräch bis zur laufenden Betreuung.</span>
                 </div>
-                <div class="fact">
-                  <strong>1</strong>
-                  <span>fester Ansprechpartner</span>
+
+                <div class="fact" data-animate>
+                  <span class="fact-label">Reaktionszeit</span>
+                  <strong>Innerhalb 24&nbsp;Stunden</strong>
+                  <span>erhalten Sie eine Rückmeldung auf Ihre Anfrage.</span>
                 </div>
-                <div class="fact">
-                  <strong>maßgeschneiderte</strong>
-                  <span>Servicepakete</span>
+
+                <div class="fact" data-animate>
+                  <span class="fact-label">Planbarkeit</span>
+                  <strong>Klare Konzepte</strong>
+                  <span>mit definierten Leistungen und festen Intervallen.</span>
                 </div>
               </div>
             </div>
@@ -176,27 +280,65 @@
       <!-- Vorteile -->
       <section id="vorteile" class="section">
         <div class="container">
-          <div class="section-box">
-            <h2>Warum Freimüller?</h2>
+          <div class="section-box" data-animate>
+            <h2 class="section-title-with-icon">
+              <span class="icon-badge icon-badge-inline">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 8h16v11H4z"></path>
+                  <path d="M7 8V5h10v3"></path>
+                  <path d="M9 13l2 2 4-4"></path>
+                </svg>
+              </span>
+              Warum Freimüller?
+            </h2>
+
             <div class="grid cards-3 benefits-grid">
-              <article class="benefit">
-                <h3>Verlässlichkeit</h3>
+              <article class="benefit" data-animate>
+                <div class="benefit-header">
+                  <span class="icon-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 5h14v10H5z"></path>
+                      <path d="M7 9h3v2H7zM11 9h3v2h-3z"></path>
+                      <path d="M9 15h6"></path>
+                    </svg>
+                  </span>
+                  <h3>Verlässlichkeit</h3>
+                </div>
                 <p>
-                  Pünktliche Ausführung, dokumentierte Leistungen und klare Ansprechpartner –
+                  Pünktliche Ausführung, dokumentierte Leistungen und feste Ansprechpartner –
                   Sie wissen immer, woran Sie sind.
                 </p>
               </article>
-              <article class="benefit">
-                <h3>Qualität & Sauberkeit</h3>
+
+              <article class="benefit" data-animate>
+                <div class="benefit-header">
+                  <span class="icon-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 7h16v10H4z"></path>
+                      <path d="M7 10l3 3 7-5"></path>
+                    </svg>
+                  </span>
+                  <h3>Qualität &amp; Sauberkeit</h3>
+                </div>
                 <p>
-                  Hohe Standards, regelmäßige Kontrollen und geschultes Personal sorgen
-                  für sichtbar bessere Ergebnisse.
+                  Hohe Standards, regelmäßige Kontrollen und geschulte Teams sorgen
+                  für dauerhaft überzeugende Ergebnisse.
                 </p>
               </article>
-              <article class="benefit">
-                <h3>Sympathisch & persönlich</h3>
+
+              <article class="benefit" data-animate>
+                <div class="benefit-header">
+                  <span class="icon-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 4a5 5 0 0 1 5 5v1a5 5 0 0 1-10 0V9a5 5 0 0 1 5-5z"></path>
+                      <path d="M5 20c1.5-2 4.1-3.2 7-3.2S17.5 18 19 20"></path>
+                    </svg>
+                  </span>
+                  <h3>Sympathisch &amp; persönlich</h3>
+                </div>
                 <p>
-                  Kurze Wege, direkter Kontakt und ehrliche Beratung – wir arbeiten auf Augenhöhe.
+                  Kurze Wege, direkte Erreichbarkeit und ehrliche Beratung –
+                  wir arbeiten auf Augenhöhe mit Ihnen.
                 </p>
               </article>
             </div>
@@ -207,67 +349,98 @@
       <!-- Kontakt -->
       <section id="kontakt" class="section">
         <div class="container">
-          <div class="section-box section-box-soft">
+          <div class="section-box section-box-soft" data-animate>
             <div class="contact-grid">
-              <div>
-                <h2>Kontakt & Anfrage</h2>
+              <div class="contact-left">
+                <h2 class="section-title-with-icon">
+                  <span class="icon-badge icon-badge-inline">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                      <polyline points="3,8 12,13 21,8"></polyline>
+                    </svg>
+                  </span>
+                  Kontakt &amp; Anfrage
+                </h2>
                 <p>
                   Sie möchten ein unverbindliches Angebot oder haben Fragen zu unseren Leistungen?
-                  Schreiben Sie uns – wir melden uns schnellstmöglich zurück.
+                  Melden Sie sich – wir freuen uns auf Ihre Anfrage.
                 </p>
 
                 <ul class="contact-info">
-                  <li><strong>Telefon:</strong> <a href="tel:+41000000000">+41 00 000 00 00</a></li>
-                  <li><strong>E-Mail:</strong> <a href="mailto:info@freimueller-facility.ch">info@freimueller-facility.ch</a></li>
-                  <li><strong>Adresse:</strong> Musterstrasse 1, 0000 Musterstadt</li>
+                  <li>
+                    <span class="contact-icon">
+                      <span class="icon-badge icon-badge-small">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M6 4h3l2 4-3 2c1.2 2.1 3 3.9 5.1 5.1l2-3 4 2v3.5a2 2 0 0 1-2 2C11 19 5 13 4 6a2 2 0 0 1 2-2z"></path>
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <strong>Telefon:</strong>
+                      <a href="tel:+41780000000">+41780000000</a>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="contact-icon">
+                      <span class="icon-badge icon-badge-small">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                          <polyline points="3,8 12,13 21,8"></polyline>
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <strong>E-Mail:</strong>
+                      <a href="mailto:info@freimueller-facility.ch">info@freimueller-facility.ch</a>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="contact-icon">
+                      <span class="icon-badge icon-badge-small">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M12 3a6 6 0 0 1 6 6c0 4.2-4.3 8.3-5.4 9.3a1 1 0 0 1-1.2 0C10.3 17.3 6 13.2 6 9a6 6 0 0 1 6-6z"></path>
+                          <circle cx="12" cy="9" r="2.3"></circle>
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <strong>Adresse:</strong>
+                      Musterstrasse 1, 0000 Musterstadt
+                    </span>
+                  </li>
                 </ul>
               </div>
 
-              <form class="contact-form">
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
+              <div class="contact-right">
+                <div class="contact-cta-card">
+                  <h3>Schnell &amp; direkt Kontakt aufnehmen</h3>
+                  <p>
+                    Wählen Sie die gewünschte Kontaktart
+                  </p>
+                  <div class="contact-cta-actions">
+                    <a href="tel:+41780000000" class="btn btn-primary btn-large">
+                      <span class="btn-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M6 4h3l2 4-3 2c1.2 2.1 3 3.9 5.1 5.1l2-3 4 2v3.5a2 2 0 0 1-2 2C11 19 5 13 4 6a2 2 0 0 1 2-2z"></path>
+                        </svg>
+                      </span>
+                      Jetzt anrufen
+                    </a>
+                    <a href="mailto:info@freimueller-facility.ch" class="btn btn-outline btn-large">
+                      <span class="btn-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <rect x="4" y="6" width="16" height="12" rx="2"></rect>
+                          <polyline points="4,8 12,13 20,8"></polyline>
+                        </svg>
+                      </span>
+                      E-Mail schreiben
+                    </a>
                   </div>
-                  <div class="form-group">
-                    <label for="firma">Firma</label>
-                    <input type="text" id="firma" name="firma">
-                  </div>
+                  <p class="contact-note">
+                    Die Telefonfunktion öffnet Ihre Anruf-App, der E-Mail-Button Ihre Mail-Anwendung.
+                  </p>
                 </div>
-
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="email">E-Mail*</label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="telefon">Telefon</label>
-                    <input type="tel" id="telefon" name="telefon">
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="art">Art der Anfrage</label>
-                  <select id="art" name="art">
-                    <option value="">Bitte auswählen</option>
-                    <option>Gebäudereinigung</option>
-                    <option>Hauswartung / Facility Service</option>
-                    <option>Aussenanlagen / Umgebung</option>
-                    <option>Sonstiges</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="nachricht">Nachricht*</label>
-                  <textarea id="nachricht" name="nachricht" rows="4" required></textarea>
-                </div>
-
-                <p class="form-note">* Pflichtfelder – das Formular ist aktuell noch ohne Backend.</p>
-
-                <button type="submit" class="btn btn-primary" disabled>
-                  Senden (Demoversion)
-                </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -287,16 +460,33 @@
   </div>
 
   <script>
-    // Aktuelles Jahr im Footer
+    // aktuelles Jahr
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Einfaches Mobile-Menü
+    // Mobile-Menü
     const navToggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.nav');
 
     navToggle.addEventListener('click', () => {
       nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('nav-toggle-open');
     });
+
+    // Scroll-Reveal
+    const animatedElements = document.querySelectorAll('[data-animate]');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    animatedElements.forEach((el) => observer.observe(el));
   </script>
 </body>
 </html>
